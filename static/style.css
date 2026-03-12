@@ -135,6 +135,14 @@ textarea:focus {
     box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
 }
 
+/* Fix for invisible dropdown options in some browsers/OS dark modes */
+select option {
+    background-color: #1e1b4b;
+    /* Match dark theme */
+    color: #94a3b8;
+    /* Grey text as requested */
+}
+
 textarea {
     resize: vertical;
     min-height: 100px;

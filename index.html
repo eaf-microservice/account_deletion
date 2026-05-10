@@ -1,55 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Account Deletion Request</title>
-    <meta name="description"
-        content="Request the deletion of your account and associated data for our Google Play applications.">
-    <link rel="stylesheet" href="static/style.css">
-</head>
+    <meta
+      name="description"
+      content="Request the deletion of your account and associated data for our Google Play applications."
+    />
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
 
     <div class="container">
-        <div class="card" id="formCard">
-            <header>
-                <h1>Account Deletion</h1>
-                <p class="subtitle">Please select your application to view its specific account and data deletion
-                    instructions.</p>
-            </header>
+      <div class="card" id="formCard">
+        <header>
+          <h1>Account Deletion</h1>
+          <p class="subtitle">
+            Please select your application to view its specific account and data
+            deletion instructions.
+          </p>
+        </header>
 
-            <form id="deletionForm">
-                <div class="form-group">
-                    <label for="application">Select Your Application</label>
-                    <select id="application" required>
-                        <option value="" disabled selected>Select from list</option>
-                        <option value="carnet_credit">Carnet Credit</option>
-                        <option value="clementines_cafe">Clementine's Cafe</option>
-                        <option value="daret">Daret</option>
-                        <option value="test_for_me">Test For Me</option>
+        <form id="deletionForm">
+          <div class="form-group">
+            <label for="application">Select Your Application</label>
+            <select id="application" required>
+              <option value="" disabled selected>Select from list</option>
+              <option value="carnet_credit">Carnet Credit</option>
+              <option value="clementines_cafe">Clementine's Cafe</option>
+              <option value="daret">Daret</option>
+              <option value="khataba">Khataba - الخطابة</option>
+              <option value="test_for_me">Test For Me</option>
+            </select>
+          </div>
 
-                    </select>
-                </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="confirmDeletion" required />
+            <label for="confirmDeletion">
+              I understand that I am being redirected to specific instructions
+              for my selected app.
+            </label>
+          </div>
 
-                <div class="checkbox-group">
-                    <input type="checkbox" id="confirmDeletion" required>
-                    <label for="confirmDeletion">
-                        I understand that I am being redirected to specific instructions for my selected app.
-                    </label>
-                </div>
-
-                <button type="submit" id="submitBtn">
-                    View Deletion Instructions
-                </button>
-            </form>
-        </div>
+          <button type="submit" id="submitBtn">
+            View Deletion Instructions
+          </button>
+        </form>
+      </div>
     </div>
 
     <script src="static/script.js"></script>
-</body>
-
+  </body>
 </html>
